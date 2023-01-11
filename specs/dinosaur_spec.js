@@ -6,22 +6,22 @@ describe('Dinosaur', function() {
   let dinosaur;
 
   beforeEach(function () {
-    dinosaur = new Dinosaur('t-rex', 'carnivore', 50);
-    dinosaur1 = new Dinosaur('raptor', 'carnivore', 100);
+    dinosaur1 = new Dinosaur('t-rex', 'carnivore', 50);
+    dinosaur2 = new Dinosaur('raptor', 'carnivore', 100);
   });
 
   it('should have a species', function () {
-    const actual = dinosaur.species;
+    const actual = dinosaur1.species;
     assert.strictEqual(actual, 't-rex');
   });
 
   it('should have a diet', function () {
-    const actual = dinosaur.diet;
+    const actual = dinosaur1.diet;
     assert.strictEqual(actual, 'carnivore');
   });
 
   it('should have an average number of visitors it attracts per day', function () {
-    const actual = dinosaur.guestsAttractedPerDay;
+    const actual = dinosaur1.guestsAttractedPerDay;
     assert.strictEqual(actual, 50);
   });
 
